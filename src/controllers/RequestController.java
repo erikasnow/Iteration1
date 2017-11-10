@@ -1,5 +1,6 @@
 package controllers;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
@@ -29,4 +30,29 @@ public class RequestController implements ControllableScreen{
 
     @FXML
     private DatePicker dateMenu;
+
+    public void createPressed(ActionEvent e){
+        System.out.println("Create Pressed");
+        parent.setScreen(ScreenController.AdminMenuID);
+    }
+    public void cancelPressed(ActionEvent e){
+        System.out.println("Cancel Pressed");
+        parent.setScreen(ScreenController.AdminMenuID);
+    }
+
+    public void serviceSelected(ActionEvent e){
+        System.out.println("Service Selected");
+    }
+
+    public void staffSelected(ActionEvent e){
+        System.out.println("Staff Selected");
+    }
+
+    public void timeSelected(ActionEvent e){
+        System.out.println("Time Selected");
+    }
+
+    public void dateSelected(ActionEvent e){
+        System.out.println("Date Selected");
+    }
 }

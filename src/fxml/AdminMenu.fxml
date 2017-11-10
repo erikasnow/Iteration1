@@ -7,7 +7,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminMenuController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AdminMenuController">
    <children>
       <GridPane layoutY="-2.0" prefHeight="400.0" prefWidth="600.0">
         <columnConstraints>
@@ -21,17 +21,17 @@
           <RowConstraints maxHeight="187.0" minHeight="10.0" prefHeight="127.0" vgrow="SOMETIMES" />
         </rowConstraints>
          <children>
-            <Button fx:id="btnService" mnemonicParsing="false" prefHeight="133.0" prefWidth="238.0" text="Request Service" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <Button fx:id="btnService" mnemonicParsing="false" onAction="#servicePressed" prefHeight="133.0" prefWidth="238.0" text="Request Service" GridPane.columnIndex="1" GridPane.rowIndex="1">
                <font>
                   <Font size="25.0" />
                </font>
             </Button>
-            <Button fx:id="btnEdit" mnemonicParsing="false" prefHeight="131.0" prefWidth="219.0" text="Edit Map" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <Button fx:id="btnEdit" mnemonicParsing="false" onAction="#editPressed" prefHeight="131.0" prefWidth="219.0" text="Edit Map" GridPane.columnIndex="2" GridPane.rowIndex="1">
                <font>
                   <Font size="25.0" />
                </font>
             </Button>
-            <Button fx:id="btnCancel" mnemonicParsing="false" prefHeight="25.0" prefWidth="207.0" text="Cancel" GridPane.columnIndex="2" GridPane.rowIndex="2">
+            <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#cancelPressed" prefHeight="25.0" prefWidth="207.0" text="Cancel" GridPane.columnIndex="2" GridPane.rowIndex="2">
                <font>
                   <Font size="22.0" />
                </font>

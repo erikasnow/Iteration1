@@ -21,7 +21,7 @@ public class AdminMenuController implements ControllableScreen{
 
     public void servicePressed(ActionEvent e){
         System.out.println("Service Pressed");
-        parent.setScreen(ScreenController.ServiceChoiceID);
+        parent.setScreen(ScreenController.RequestID);
     }
 
     public void editPressed(ActionEvent e){
