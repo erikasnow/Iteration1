@@ -3,7 +3,7 @@ package service;
 
 import java.util.List;
 
-public class TransportService implements Service{
+public class TransportService extends Service{
     private String transportationType;
 
     private String type;

@@ -2,7 +2,7 @@ package service;
 
 import java.util.List;
 
-public class FoodService implements Service{
+public class FoodService extends Service{
     private String foodType;
     private String type;
     List<Staff> personel;

@@ -2,7 +2,7 @@ package service;
 
 import java.util.List;
 
-public class TranslatorService implements Service{
+public class TranslatorService extends Service{
     private String language;
     private int endTime;
     private String type;
