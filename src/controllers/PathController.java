@@ -1,10 +1,16 @@
 package controllers;
 
-public class PathController implements ControllableScreen{
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.CheckBox;
+import javafx.scene.control.Label;
+import javafx.scene.control.MenuButton;
 
+public class PathController implements ControllableScreen{
+    private ScreenController parent;
 
     public void setParentController(ScreenController parent){
-
+        this.parent = parent;
     }
 
     @FXML

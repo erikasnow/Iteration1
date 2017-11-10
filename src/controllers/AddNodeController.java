@@ -1,10 +1,15 @@
 package controllers;
 
-public class AddNodeController implements ControllableScreen{
+import javafx.fxml.FXML;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.TextField;
 
+public class AddNodeController implements ControllableScreen{
+    private ScreenController parent;
 
     public void setParentController(ScreenController parent){
-
+        this.parent = parent;
     }
 
     @FXML
