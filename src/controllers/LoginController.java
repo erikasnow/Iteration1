@@ -7,4 +7,16 @@ public class LoginController implements ControllableScreen{
 
     }
 
+    @FXML
+    private Button btnenter;
+
+    @FXML
+    private Button btncancel;
+
+    @FXML
+    private TextField txtfldLogin;
+
+    @FXML
+    private PasswordField passworkFieldPassword;
+
 }

@@ -7,4 +7,13 @@ public class ServiceController implements ControllableScreen{
 
     }
 
+    @FXML
+    private Button btnService;
+
+    @FXML
+    private Button btnEdit;
+
+    @FXML
+    private Button btnCancel;
+
 }
