@@ -35,9 +35,9 @@
                       <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
                     </rowConstraints>
                      <children>
-                        <Button fx:id="btnenter" minWidth="75.0" mnemonicParsing="false" text="Enter" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
-                        <Button fx:id="ntncancel" minWidth="75.0" mnemonicParsing="false" text="Cancel" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
-                        <CheckBox fx:id="chkstairs" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+                        <Button fx:id="btnenter" minWidth="75.0" mnemonicParsing="false" onAction="#enterPressed" text="Enter" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                        <Button fx:id="ntncancel" minWidth="75.0" mnemonicParsing="false" onAction="#cancelPressed" text="Cancel" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4" />
+                        <CheckBox fx:id="chkstairs" mnemonicParsing="false" onAction="#stairsPressed" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
                            <GridPane.margin>
                               <Insets right="100.0" />
                            </GridPane.margin>
@@ -62,13 +62,13 @@
                               <Font size="24.0" />
                            </font>
                         </Label>
-                        <MenuButton fx:id="mbstart" minWidth="118.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="118.0" text="MenuButton" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                        <MenuButton fx:id="mbstart" minWidth="118.0" mnemonicParsing="false" onAction="#startSelected" prefHeight="25.0" prefWidth="118.0" text="MenuButton" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
                           <items>
                             <MenuItem mnemonicParsing="false" text="Action 1" />
                             <MenuItem mnemonicParsing="false" text="Action 2" />
                           </items>
                         </MenuButton>
-                        <MenuButton fx:id="mbend" minWidth="120.0" mnemonicParsing="false" text="MenuButton" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+                        <MenuButton fx:id="mbend" minWidth="120.0" mnemonicParsing="false" onAction="#endSelected" text="MenuButton" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
                           <items>
                             <MenuItem mnemonicParsing="false" text="Action 1" />
                             <MenuItem mnemonicParsing="false" text="Action 2" />
