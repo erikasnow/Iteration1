@@ -18,8 +18,6 @@ public class ScreenController extends StackPane {
     public static String FilterFile = "/fxml/Filter.fxml";
     public static String LoginID = "Login";
     public static String LoginFile = "/fxml/Login.fxml";
-    public static String LoginMenuID = "LoginMenu";
-    public static String LoginMenuFile = "/fxml/AdminMenu.fxml";
     public static String LogoutID = "LogoutID";
     public static String LogoutFile = "/fxml/Logout.fxml";
     public static String MainID = "Main";
@@ -28,8 +26,6 @@ public class ScreenController extends StackPane {
     public static String PathFile = "/fxml/Path.fxml";
     public static String RequestID = "Request";
     public static String RequestFile = "/fxml/Request.fxml";
-    public static String ServiceChoiceID = "ServiceChoice";
-    public static String ServiceChoiceFile = "/fxml/ServiceChoice.fxml";
     public static String ThankYouID = "ThankYou";
     public static String ThankYouFile = "/fxml/ThankYou.fxml";
 

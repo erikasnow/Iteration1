@@ -23,7 +23,6 @@ public class Main extends Application {
         //myScreenController.loadScreen(ScreenController.NodeConfirmID, ScreenController.NodeConfirmFile);
         myScreenController.loadScreen(ScreenController.PathID, ScreenController.PathFile);
         myScreenController.loadScreen(ScreenController.RequestID, ScreenController.RequestFile);
-        myScreenController.loadScreen(ScreenController.ServiceChoiceID, ScreenController.ServiceChoiceFile);
         //myScreenController.loadScreen(ScreenController.ThankYouID, ScreenController.ThankYouFile);
 
         myScreenController.setScreen(ScreenController.MainID);

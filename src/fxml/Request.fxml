@@ -46,20 +46,20 @@
             <Label GridPane.halignment="CENTER" GridPane.rowIndex="5" />
             <MenuButton fx:id="serviceDropDown" mnemonicParsing="false" onAction="#serviceSelected" text="MenuButton" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
               <items>
-                <MenuItem mnemonicParsing="false" text="Action 1" />
-                <MenuItem mnemonicParsing="false" text="Action 2" />
+                <MenuItem mnemonicParsing="false" onAction="#serviceSelected" text="Action 1" />
+                <MenuItem mnemonicParsing="false" onAction="#serviceSelected" text="Action 2" />
               </items>
             </MenuButton>
             <MenuButton fx:id="staffDropDown" mnemonicParsing="false" onAction="#staffSelected" text="MenuButton" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
               <items>
-                <MenuItem mnemonicParsing="false" text="Action 1" />
-                <MenuItem mnemonicParsing="false" text="Action 2" />
+                <MenuItem mnemonicParsing="false" onAction="#staffSelected" text="Action 1" />
+                <MenuItem mnemonicParsing="false" onAction="#staffSelected" text="Action 2" />
               </items>
             </MenuButton>
             <MenuButton fx:id="timeDropDown" mnemonicParsing="false" onAction="#timeSelected" text="MenuButton" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
               <items>
-                <MenuItem mnemonicParsing="false" text="Action 1" />
-                <MenuItem mnemonicParsing="false" text="Action 2" />
+                <MenuItem mnemonicParsing="false" onAction="#timeSelected" text="Action 1" />
+                <MenuItem mnemonicParsing="false" onAction="#timeSelected" text="Action 2" />
               </items>
             </MenuButton>
             <DatePicker fx:id="dateMenu" onAction="#dateSelected" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3" />
