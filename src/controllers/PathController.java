@@ -40,4 +40,29 @@ public class PathController implements ControllableScreen{
     @FXML
     private MenuButton mbend;
 
+    public void enterPressed(ActionEvent e)
+    {
+        System.out.println("Enter Pressed");
+    }
+    public void cancelPressed(ActionEvent e)
+    {
+        System.out.println("Cancel Pressed");
+        parent.setScreen(ScreenController.MainID);
+    }
+
+    public void stairsPressed(ActionEvent e)
+    {
+        System.out.println("Checked off stairs");
+    }
+
+    public void startSelected(ActionEvent e)
+    {
+
+    }
+
+    public void endSelected(ActionEvent e)
+    {
+
+    }
+
 }
