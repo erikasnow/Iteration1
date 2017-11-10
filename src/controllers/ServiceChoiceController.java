@@ -17,7 +17,4 @@ public class ServiceChoiceController implements ControllableScreen{
 
     @FXML
     private Button btnCancel;
-
-
-
 }
