@@ -29,7 +29,7 @@ public class Staff{
     }
 
     public int getID(){
-        return ID
+        return ID;
     }
 
     public void setFullName(String fullName) {

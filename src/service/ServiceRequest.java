@@ -1,12 +1,14 @@
 package service;
 
-public ServiceRequest{
-        public ArayList<Services> services;
+import java.util.ArrayList;
+import java.util.Map;
+
+public class ServiceRequest{
+        public ArrayList<Service> services;
         public Map<String, Staff> staff;
 
         public ServiceRequest(){
 
         }
 
-        public
 }

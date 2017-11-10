@@ -1,7 +1,11 @@
-package kioskEngine;
+package service;
+
+import java.util.List;
 
 public class FoodService implements Service{
     private String foodType;
+    private String type;
+    List<Staff> personel;
 
     public FoodService (){
         this.type = "FoodService";
@@ -12,12 +16,12 @@ public class FoodService implements Service{
         this.type = "FoodService";
     }
 
-    public assignPerson(Staff person){
+    public void assignPerson(Staff person){
         this.personel.add(person);
     }
 
-    public assignPeople(List<Staff> people){
+    public void assignPeople(List<Staff> people){
         for(Staff person: people)
-            this.personel.add(person)
+            this.personel.add(person);
     }
 }

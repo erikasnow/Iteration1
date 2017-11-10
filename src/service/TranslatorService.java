@@ -1,8 +1,12 @@
-package kioskEngine;
+package service;
+
+import java.util.List;
 
 public class TranslatorService implements Service{
     private String language;
     private int endTime;
+    private String type;
+    List<Staff> personel;
 
     public TranslatorService (){
         this.type = "TranslatorService";
@@ -14,12 +18,12 @@ public class TranslatorService implements Service{
         this.type = "TranslatorService";
     }
 
-    public assignPerson(Staff person){
+    public void assignPerson(Staff person){
         this.personel.add(person);
     }
 
-    public assignPeople(List<Staff> people){
+    public void assignPeople(List<Staff> people){
         for(Staff person: people)
-            this.personel.add(person)
+            this.personel.add(person);
     }
 }
