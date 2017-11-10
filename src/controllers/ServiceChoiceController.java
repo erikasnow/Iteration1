@@ -3,7 +3,7 @@ package controllers;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
-public class ServiceController implements ControllableScreen{
+public class ServiceChoiceController implements ControllableScreen{
     private ScreenController parent;
 
     public void setParentController(ScreenController parent){
@@ -17,5 +17,7 @@ public class ServiceController implements ControllableScreen{
 
     @FXML
     private Button btnCancel;
+
+
 
 }

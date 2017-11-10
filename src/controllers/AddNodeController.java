@@ -1,5 +1,6 @@
 package controllers;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -38,5 +39,16 @@ public class AddNodeController implements ControllableScreen{
 
     @FXML
     private TextField txtfldName;
+
+    public void enterPressed(ActionEvent e){
+        System.out.println("Enter Pressed");
+        parent.setScreen(ScreenController.AdminMenuID);
+    }
+
+    public void cancelPressed(ActionEvent e){
+        System.out.println("Cancel Pressed");
+        parent.setScreen(ScreenController.AdminMenuID);
+    }
+
 
 }

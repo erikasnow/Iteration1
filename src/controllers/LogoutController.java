@@ -1,7 +1,7 @@
 package controllers;
 
 
-public class LogoutController {
+public class LogoutController implements ControllableScreen {
     private ScreenController parent;
 
     public void setParentController(ScreenController parent){

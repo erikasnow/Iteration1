@@ -1,5 +1,6 @@
 package controllers;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
@@ -18,5 +19,19 @@ public class AdminMenuController implements ControllableScreen{
     @FXML
     private Button btnCancel;
 
+    public void servicePressed(ActionEvent e){
+        System.out.println("Service Pressed");
+        parent.setScreen(ScreenController.ServiceChoiceID);
+    }
+
+    public void editPressed(ActionEvent e){
+        System.out.println("Edit Pressed");
+        parent.setScreen(ScreenController.AddNodeID);
+    }
+
+    public void cancelPressed(ActionEvent e){
+        System.out.println("Cancel Pressed");
+        parent.setScreen(ScreenController.MainID);
+    }
 
 }

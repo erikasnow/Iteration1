@@ -1,6 +1,5 @@
 package controllers;
 
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Node;
 import javafx.scene.Parent;
@@ -12,7 +11,7 @@ import java.util.HashMap;
 public class ScreenController extends StackPane {
 
     public static String AddNodeID = "AddNode";
-    public static String AddNodeFile = "/fxml/AddNode.fmxl";
+    public static String AddNodeFile = "/fxml/AddNode.fxml";
     public static String AdminMenuID = "AdminMenu";
     public static String AdminMenuFile = "/fxml/AdminMenu.fxml";
     public static String FilterID = "Filter";
@@ -20,7 +19,7 @@ public class ScreenController extends StackPane {
     public static String LoginID = "Login";
     public static String LoginFile = "/fxml/Login.fxml";
     public static String LoginMenuID = "LoginMenu";
-    public static String LoginMenuFile = "/fxml/LoginMenu.fxml";
+    public static String LoginMenuFile = "/fxml/AdminMenu.fxml";
     public static String LogoutID = "LogoutID";
     public static String LogoutFile = "/fxml/Logout.fxml";
     public static String MainID = "Main";
@@ -30,7 +29,7 @@ public class ScreenController extends StackPane {
     public static String RequestID = "Request";
     public static String RequestFile = "/fxml/Request.fxml";
     public static String ServiceChoiceID = "ServiceChoice";
-    public static String File = "/fxml/ServiceChoice.fxml";
+    public static String ServiceChoiceFile = "/fxml/ServiceChoice.fxml";
     public static String ThankYouID = "ThankYou";
     public static String ThankYouFile = "/fxml/ThankYou.fxml";
 
@@ -64,7 +63,7 @@ public class ScreenController extends StackPane {
             return true;
         }
         catch (Exception e) {
-            System.out.println("ERROR" + e.getMessage());
+            System.out.println("ERROR " + e.getMessage());
             throw e;
         }
 
