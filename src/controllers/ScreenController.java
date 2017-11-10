@@ -6,32 +6,33 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.layout.StackPane;
 
+import java.io.IOException;
 import java.util.HashMap;
 
 public class ScreenController extends StackPane {
 
     public static String AddNodeID = "AddNode";
-    public static String AddNodeFile = "AddNode.fmxl";
+    public static String AddNodeFile = "/fxml/AddNode.fmxl";
     public static String AdminMenuID = "AdminMenu";
-    public static String AdminMenuFile = "AdminMenu.fxml";
+    public static String AdminMenuFile = "/fxml/AdminMenu.fxml";
     public static String FilterID = "Filter";
-    public static String FilterFile = "Filter.fxml";
+    public static String FilterFile = "/fxml/Filter.fxml";
     public static String LoginID = "Login";
-    public static String LoginFile = "Login.fxml";
+    public static String LoginFile = "/fxml/Login.fxml";
     public static String LoginMenuID = "LoginMenu";
-    public static String LoginMenuFile = "LoginMenu.fxml";
+    public static String LoginMenuFile = "/fxml/LoginMenu.fxml";
     public static String LogoutID = "LogoutID";
-    public static String LogoutFile = "Logout.fxml";
+    public static String LogoutFile = "/fxml/Logout.fxml";
     public static String MainID = "Main";
-    public static String MainFile = "Main.fxml";
+    public static String MainFile = "/fxml/Main.fxml";
     public static String PathID = "Path";
-    public static String PathFile = "Path.fxml";
+    public static String PathFile = "/fxml/Path.fxml";
     public static String RequestID = "Request";
-    public static String RequestFile = "Request.fxml";
+    public static String RequestFile = "/fxml/Request.fxml";
     public static String ServiceChoiceID = "ServiceChoice";
-    public static String File = "ServiceChoice.fxml";
+    public static String File = "/fxml/ServiceChoice.fxml";
     public static String ThankYouID = "ThankYou";
-    public static String ThankYouFile = "ThankYou.fxml";
+    public static String ThankYouFile = "/fxml/ThankYou.fxml";
 
     private HashMap<String, Node> screens = new HashMap<String, Node>();
 
@@ -53,7 +54,7 @@ public class ScreenController extends StackPane {
 
     //load a screen into the overall ui.
     //does not display the screen
-    public boolean loadScreen(String name, String file){
+    public boolean loadScreen (String name, String file) throws IOException {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource(file));
             Parent fxmlToLoad = (Parent) fxmlLoader.load();
@@ -63,8 +64,8 @@ public class ScreenController extends StackPane {
             return true;
         }
         catch (Exception e) {
-            System.out.println(e.getMessage());
-            return false;
+            System.out.println("ERROR" + e.getMessage());
+            throw e;
         }
 
     }
@@ -78,6 +79,7 @@ public class ScreenController extends StackPane {
             getChildren().add(screens.get(name));
             return true;
         }
+        System.out.println("Set Screen Failed");
         return false;
     }
 
