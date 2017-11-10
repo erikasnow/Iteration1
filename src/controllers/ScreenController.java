@@ -10,6 +10,29 @@ import java.util.HashMap;
 
 public class ScreenController extends StackPane {
 
+    public static String AddNodeID = "AddNode";
+    public static String AddNodeFile = "AddNode.fmxl";
+    public static String AdminMenuID = "AdminMenu";
+    public static String AdminMenuFile = "AdminMenu.fxml";
+    public static String FilterID = "Filter";
+    public static String FilterFile = "Filter.fxml";
+    public static String LoginID = "Login";
+    public static String LoginFile = "Login.fxml";
+    public static String LoginMenuID = "LoginMenu";
+    public static String LoginMenuFile = "LoginMenu.fxml";
+    public static String LogoutID = "LogoutID";
+    public static String LogoutFile = "Logout.fxml";
+    public static String MainID = "Main";
+    public static String MainFile = "Main.fxml";
+    public static String PathID = "Path";
+    public static String PathFile = "Path.fxml";
+    public static String RequestID = "Request";
+    public static String RequestFile = "Request.fxml";
+    public static String ServiceChoiceID = "ServiceChoice";
+    public static String File = "ServiceChoice.fxml";
+    public static String ThankYouID = "ThankYou";
+    public static String ThankYouFile = "ThankYou.fxml";
+
     private HashMap<String, Node> screens = new HashMap<String, Node>();
 
     public ScreenController(){
@@ -20,6 +43,8 @@ public class ScreenController extends StackPane {
     public void addScreen(String name, Node screen){
         screens.put(name,screen);
     }
+
+
 
     //return a screen from the screens HashMap
     public Node getScreen(String name){

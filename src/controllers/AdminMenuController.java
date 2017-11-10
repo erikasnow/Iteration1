@@ -18,4 +18,5 @@ public class AdminMenuController implements ControllableScreen{
     @FXML
     private Button btnCancel;
 
+
 }
